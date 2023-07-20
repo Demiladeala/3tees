@@ -8,7 +8,7 @@ const Courses = () => {
   return (
     <>
     <div className='relative mt-[10rem] w-full'>
-      <div className='absolute'>
+      <div className='absolute md:hidden'>
         <img src={rec1}/>
       </div>
       <div className='w-full flex items-center justify-center'>
@@ -27,7 +27,7 @@ const Courses = () => {
      
      </div>
 
-     <div className='row-span-2 bg-[#F9F9F9] rounded-lg p-2 flex items-center'>
+     <div className='relative row-span-2 bg-[#F9F9F9] rounded-lg p-2 flex items-center z-10'>
       <div className=''>
       <h1 className='font-semibold text-lg'>Course 1</h1>
       <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
@@ -35,10 +35,11 @@ const Courses = () => {
       </div>
      </div>
 
+       <div className='absolute top-[-1rem] right-[15%] z-0 md:hidden course-circle'>
+        <img src={rec2} className='z-0' />
+      </div>
+
      <div className='relative bg-[#F89650] rounded-lg p-2 z-10'>
-      {/* <div className='absolute top-[-1.5rem] z-0'>
-        <img src={rec2} className='border z-0' />
-      </div> */}
       <h1 className='pt-6 font-semibold text-lg'>Course 1</h1>
       <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
       <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white text-xs'>Button</button>
@@ -50,11 +51,15 @@ const Courses = () => {
       <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white text-xs'>Button</button>
      </div>
 
-     <div className='text-white bg-[#181822] rounded-lg p-2'>
+     <div className='relative text-white bg-[#181822] rounded-lg p-2 z-10'>
       <h1 className='pt-6 font-semibold text-lg'>Course 1</h1>
       <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
       <button className='bg-[#E56000] py-1 px-5 rounded-xl text-xs'>Button</button>
      </div>
+
+     <div className='absolute bottom-[-1.2rem] right-[20%] z-0 md:hidden'>
+        <img src={rec3} className='z-0' />
+    </div>
 
     </div>
     </>
