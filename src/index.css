@@ -38,3 +38,9 @@
         justify-content: center;
     }
 }
+
+@media (max-width:360px) {
+    .rec2{
+        max-height: 25rem;
+    }
+}

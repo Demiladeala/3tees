@@ -31,8 +31,8 @@ const About = () => {
 
         <div className='relative mx-auto mt-[8rem] parent-image-width md:mt-0'>
           <img src={rec1} className='z-10 absolute top-[10%] left-[0.28rem] sm:left-[-0.8125rem]' />
-          <img src={aboutImage} className='image-width z-20 object-cover max-h-[30rem] rounded-xl' />
-          <img src={rec2} className='z-0 absolute top-[-3rem] left-[30%]' />
+          <img src={aboutImage} className='relative image-width z-20 object-cover max-h-[30rem] rounded-xl' />
+          <img src={rec2} className='rec2 z-0 absolute top-[-3rem] left-[30%]' />
           <img src={rec3} className='z-10 absolute' />
           <img src={rec4} className='z-10 absolute' />
           <img src={rec5} className='z-10 absolute' />
