@@ -6,7 +6,7 @@ const Courses = () => {
   return (
     <>
     <div className='relative mt-20 w-full'>
-      <div className='absolute'>
+      <div className='absolute mt-6'>
         <img src={rec1}/>
       </div>
       <div className='w-full flex items-center justify-center'>
@@ -15,12 +15,12 @@ const Courses = () => {
       <h2 className='text-center mt-3 text-2xl font-bold'>Our Courses</h2>
     </div>
 
-    <div className='w-[96%] mx-auto border grid grid-cols-3 grid-rows-2 gap-1 mt-10'>
-     <div className='col-span-1 bg-gray-200'>1</div>
-     <div>2</div>
-     <div>3</div>
-     <div>4</div>
-     <div>5</div>
+    <div className='w-[96%] mx-auto grid grid-cols-3 grid-rows-2 gap-1 mt-10'>
+     <div className='text-white bg-[#181822] rounded-lg'>1</div>
+     <div className='row-span-2 bg-[#F9F9F9] rounded-lg'>2</div>
+     <div className='bg-[#F89650] rounded-lg'>3</div>
+     <div className='bg-[#F89650] rounded-lg'>4</div>
+     <div className='text-white bg-[#181822] rounded-lg'>5</div>
     </div>
     </>
   )
