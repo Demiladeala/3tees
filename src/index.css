@@ -21,3 +21,20 @@
     flex-shrink: 0; /* Prevent children from shrinking beyond their set width */
     scroll-snap-align: start; /* Snap children while scrolling */
 }
+
+
+
+@media (max-width:768px) {
+    .parent-image-width{
+        /* border: solid 1px green; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-width{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+}

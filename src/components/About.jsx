@@ -1,13 +1,18 @@
 import React from 'react'
 import headerImage from "../assets/header-image.jpg"
 import aboutImage from "../assets/about-image.jpg"
+import rec1 from "../assets/about-rec-1.png"
+import rec2 from "../assets/about-rec-2.png"
+import rec3 from "../assets/about-rec-3.png"
+import rec4 from "../assets/about-rec-4.png"
+import rec5 from "../assets/about-rec-5.png"
 
 const About = () => {
   return (
     <>
     <div className='w-[90%] mx-auto mt-28 flex flex-col gap-5 md:items-center md:justify-center md:flex-row'>
 
-        <div className='w-full space-y-6 md:basis-[38%]'>
+        <div className='w-full space-y-6 md:basis-[40%]'>
             <div className='w-full flex items-center justify-center'>
               <img src={headerImage} />
             </div>
@@ -24,8 +29,13 @@ const About = () => {
             </div>
         </div>
 
-        <div className='pt-20 md:basis-[38%]'>
-          <img src={aboutImage} className='w-full object-cover max-h-[30rem] rounded-xl' />
+        <div className='relative mx-auto mt-[8rem] parent-image-width md:mt-0'>
+          <img src={rec1} className='z-10 absolute top-[10%] left-[0.28rem] sm:left-[-0.8125rem]' />
+          <img src={aboutImage} className='image-width z-20 object-cover max-h-[30rem] rounded-xl' />
+          <img src={rec2} className='z-0 absolute top-[-3rem] left-[30%]' />
+          <img src={rec3} className='z-10 absolute' />
+          <img src={rec4} className='z-10 absolute' />
+          <img src={rec5} className='z-10 absolute' />
         </div>
     </div>
     </>
