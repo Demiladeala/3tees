@@ -1,5 +1,5 @@
 import React from 'react'
-import headerImage from "../assets/header-image.jpg"
+import headerImage from "../assets/header-image.png"
 import aboutImage from "../assets/about-image.jpg"
 import rec1 from "../assets/about-rec-1.png"
 import rec2 from "../assets/about-rec-2.png"
