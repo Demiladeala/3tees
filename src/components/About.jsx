@@ -5,9 +5,9 @@ import aboutImage from "../assets/about-image.jpg"
 const About = () => {
   return (
     <>
-    <div className='w-[95%] mx-auto mt-28 flex flex-col gap-5 md:flex-row'>
+    <div className='w-[90%] mx-auto mt-28 flex flex-col gap-5 md:items-center md:justify-center md:flex-row'>
 
-        <div className='w-full space-y-6 md:basis-[48%]'>
+        <div className='w-full space-y-6 md:basis-[38%]'>
             <div className='w-full flex items-center justify-center'>
               <img src={headerImage} />
             </div>
@@ -24,8 +24,8 @@ const About = () => {
             </div>
         </div>
 
-        <div className='md:basis-[48%]'>
-          <img src={aboutImage} className='w-full object-cover min-h-[19rem] rounded-xl' />
+        <div className='pt-20 md:basis-[38%]'>
+          <img src={aboutImage} className='w-full object-cover max-h-[30rem] rounded-xl' />
         </div>
     </div>
     </>

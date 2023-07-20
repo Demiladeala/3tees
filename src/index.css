@@ -21,6 +21,3 @@
     flex-shrink: 0; /* Prevent children from shrinking beyond their set width */
     scroll-snap-align: start; /* Snap children while scrolling */
 }
-.parent-service{
-    scroll-snap-type: x mandatory
-}
