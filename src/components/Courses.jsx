@@ -5,8 +5,8 @@ import rec1 from "../assets/course-rec1.png"
 const Courses = () => {
   return (
     <>
-    <div className='relative mt-20 w-full'>
-      <div className='absolute mt-6'>
+    <div className='relative mt-[10rem] w-full'>
+      <div className='absolute'>
         <img src={rec1}/>
       </div>
       <div className='w-full flex items-center justify-center'>
@@ -16,7 +16,10 @@ const Courses = () => {
     </div>
 
     <div className='w-[96%] mx-auto grid grid-cols-3 grid-rows-2 gap-1 mt-10'>
-     <div className='text-white bg-[#181822] rounded-lg'>1</div>
+     <div className='text-white bg-[#181822] rounded-lg'>
+      <h1>Courses</h1>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+     </div>
      <div className='row-span-2 bg-[#F9F9F9] rounded-lg'>2</div>
      <div className='bg-[#F89650] rounded-lg'>3</div>
      <div className='bg-[#F89650] rounded-lg'>4</div>

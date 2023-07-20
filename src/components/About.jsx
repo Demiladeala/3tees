@@ -6,6 +6,8 @@ import rec2 from "../assets/about-rec-2.png"
 import rec3 from "../assets/about-rec-3.png"
 import rec4 from "../assets/about-rec-4.png"
 import rec5 from "../assets/about-rec-5.png"
+import cir1 from "../assets/about-circle-1.png"
+import cir2 from "../assets/about-circle-2.png"
 
 const About = () => {
   return (
@@ -30,6 +32,14 @@ const About = () => {
         </div>
 
         <div className='relative mx-auto mt-[15rem] parent-image-width md:mt-0'>
+          
+          <div className='w-full absolute top-[-7rem] flex justify-end md:hidden'>
+            <div className='mr-10'>
+            <img src={cir1} className='relative top-[-0.7rem] left-[-1rem]' />
+            <img src={cir2} />
+            </div>
+           
+          </div>
           <img src={rec1} className='z-0 absolute top-[10%] left-[0.28rem] sm:left-[-0.8125rem]' />
           <img src={aboutImage} className='relative image-width z-10 object-cover max-h-[30rem] rounded-xl' />
           <img src={rec2} className='rec2 z-0 absolute top-[-3rem] left-[30%]' />
