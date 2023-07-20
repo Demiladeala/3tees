@@ -29,26 +29,26 @@ const Courses = () => {
       <div className=''>
       <h1 className='font-semibold text-lg'>Course 1</h1>
       <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
-      <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white'>Button</button>
+      <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white text-xs'>Button</button>
       </div>
      </div>
 
      <div className='bg-[#F89650] rounded-lg p-2'>
       <h1 className='pt-6 font-semibold text-lg'>Course 1</h1>
       <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
-      <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white'>Button</button>
+      <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white text-xs'>Button</button>
      </div>
 
      <div className='bg-[#F89650] rounded-lg p-2'>
       <h1 className='pt-6 font-semibold text-lg'>Course 1</h1>
       <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
-      <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white'>Button</button>
+      <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white text-xs'>Button</button>
      </div>
 
      <div className='text-white bg-[#181822] rounded-lg p-2'>
       <h1 className='pt-6 font-semibold text-lg'>Course 1</h1>
       <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
-      <button className='bg-[#E56000] py-1 px-5 rounded-xl'>Button</button>
+      <button className='bg-[#E56000] py-1 px-5 rounded-xl text-xs'>Button</button>
      </div>
 
     </div>
