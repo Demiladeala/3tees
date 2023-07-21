@@ -21,8 +21,11 @@
     flex-shrink: 0; /* Prevent children from shrinking beyond their set width */
     scroll-snap-align: start; /* Snap children while scrolling */
 }
-
-
+.swiper-button-next,
+.swiper-button-prev{
+    background-color: transparent;
+    color: white;
+}
 
 @media (max-width:768px) {
     .parent-image-width{
