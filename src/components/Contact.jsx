@@ -23,22 +23,22 @@ const Contact = () => {
             <h1 className='text-lg md:text-2xl'>Find us Through <br className='md:hidden' /> These!</h1>
           </div>
           <div className='basis-[40%] flex gap-1 md:justify-center mr-4'>
-            <div className=" h-full">
-              <img className=' w-10' src={bar1} />
+            <div className=" h-full w-10">
+              <img className=' ' src={bar1} />
             </div>
-            <div className=" h-full flex flex-col items-center justify-center">
+            <div className=" h-full flex flex-col items-center justify-center w-10">
               <img className=' object-contain w-5' src={phoneIcon}/>
               <img className=' w-14' src={bar2}/>
               <img className=' object-contain w-5' src={WhatsappIcon}/>
             </div>
-            <div className=" h-full flex flex-col items-center justify-center">
-              <img className=' object-contain w-14' src={bar3}/>
+            <div className=" h-full flex flex-col items-center justify-center w-10">
+              <img className=' object-contain' src={bar3}/>
               <img className=' object-contain' src={bar4}/>
             </div>
-            <div className=" h-full flex flex-col items-center justify-center">
+            <div className=" h-full flex flex-col items-center justify-center w-10">
               <img className=' object-contain mt-4' src={bar5} />
             </div>
-            <div className=" h-full flex flex-col items-center">
+            <div className=" h-full flex flex-col items-center w-10">
               <img className=' object-contain' src={bar6} />
               <img className=' object-contain mt-4' src={LocationIcon} />
             </div>
