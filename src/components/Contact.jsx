@@ -9,13 +9,37 @@ import bar6 from '../assets/contact-bar-6.png'
 import phoneIcon from "../assets/phone-icon.png"
 import WhatsappIcon from "../assets/Whatsapp-icon.png"
 import LocationIcon from "../assets/Location-icon.png"
+import arrow1 from "../assets/contact-mobile-arrow-1.png"
+import arrow2 from "../assets/contact-mobile-arrow-2.png"
+import circle1 from "../assets/contact-mobile-circle-1.png"
+import circle2 from "../assets/contact-mobile-circle-2.png"
 
 const Contact = () => {
   return (
     <>
-    <div className='w-full relative mt-28'>
+    <div className='w-full relative mt-40'>
        <div className='relative flex flex-col'>
-        <div className='w-[90%] md:w-[70%] mx-auto bg-[#08043C] rounded-2xl py-8 md:py-16 flex justify-between'>
+
+      <div className='w-full absolute py-5 z-0 md:hidden'>
+        <div className='absolute top-[-1.3rem]'>
+          <img src={arrow1} className='absolute top-[-3rem]'/>
+          <img src={arrow2} />
+        </div>
+      </div>
+
+      <div className='w-full absolute py-5 z-0 md:hidden'>
+        <div className='absolute top-[-5rem] right-0'>
+          <img src={circle1} className='top-[-3rem]'/>
+        </div>
+      </div>
+
+      <div className='w-full absolute py-5 z-0 md:hidden'>
+        <div className='absolute right-0'>
+          <img src={circle2} className='top-[-3rem]'/>
+        </div>
+      </div>
+
+        <div className='z-10 w-[90%] md:w-[70%] mx-auto bg-[#08043C] rounded-2xl py-8 md:py-16 flex justify-between'>
           <div className=' border-white basis-[60%] ml-4 space-y-3 text-white'>
             <div>
               <img src={header}/>
@@ -45,7 +69,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className='relative w-[60%] md:w-[30%] bg-[#f1f1f1] rounded-2xl py-2 top-[-1rem] left-[9%] md:left-[20%] md:top-[-3rem]'>
+        <div className='relative z-10 w-[60%] md:w-[30%] bg-[#f1f1f1] rounded-2xl py-2 top-[-1rem] left-[9%] md:left-[20%] md:top-[-3rem]'>
           <div className='w-[80%] relative left-2 flex flex-col gap-4'>
               <div className='flex gap-3 items-center mt-4'>
                 <div className='w-3 h-3 border border-[#272DC6] rounded-full'></div>
