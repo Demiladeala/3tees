@@ -46,7 +46,7 @@ const Contact = () => {
         </div>
 
         <div className='relative w-[60%] md:w-[30%] bg-[#f1f1f1] rounded-2xl py-2 top-[-1rem] left-[9%] md:left-[20%] md:top-[-3rem]'>
-          <div className='w-[90%] mx-auto flex flex-col gap-4'>
+          <div className='w-[80%] relative left-2 flex flex-col gap-4'>
               <div className='flex gap-3 items-center mt-4'>
                 <div className='w-3 h-3 border border-[#272DC6] rounded-full'></div>
                 <p className='text-sm flex-shrink-0 md:text-lg'>location: Arepo, Ogun state</p>
