@@ -15,7 +15,7 @@ const Contact = () => {
     <>
     <div className='w-full relative mt-28'>
        <div className='relative flex flex-col'>
-        <div className='w-[90%] md:w-[70%] mx-auto bg-[#08043C] rounded-2xl py-8 flex justify-between'>
+        <div className='w-[90%] md:w-[70%] mx-auto bg-[#08043C] rounded-2xl py-8 md:py-16 flex justify-between'>
           <div className=' border-white basis-[60%] ml-4 space-y-3 text-white'>
             <div>
               <img src={header}/>
@@ -23,30 +23,47 @@ const Contact = () => {
             <h1 className='text-lg md:text-2xl'>Find us Through <br className='md:hidden' /> These!</h1>
           </div>
           <div className='basis-[40%] flex gap-1 md:justify-center mr-4'>
-            <div className=" h-full w-10">
+            <div className=" h-full w-10 contact-div">
               <img className=' ' src={bar1} />
             </div>
-            <div className=" h-full flex flex-col items-center justify-center w-10">
+            <div className=" h-full flex flex-col items-center justify-center w-10 contact-div">
               <img className=' object-contain w-5' src={phoneIcon}/>
               <img className=' w-14' src={bar2}/>
               <img className=' object-contain w-5' src={WhatsappIcon}/>
             </div>
-            <div className=" h-full flex flex-col items-center justify-center w-10">
+            <div className=" h-full flex flex-col items-center justify-center w-10 contact-div">
               <img className=' object-contain' src={bar3}/>
               <img className=' object-contain' src={bar4}/>
             </div>
-            <div className=" h-full flex flex-col items-center justify-center w-10">
+            <div className=" h-full flex flex-col items-center justify-center w-10 contact-div">
               <img className=' object-contain mt-4' src={bar5} />
             </div>
-            <div className=" h-full flex flex-col items-center w-10">
+            <div className=" h-full flex flex-col items-center w-10 contact-div">
               <img className=' object-contain' src={bar6} />
               <img className=' object-contain mt-4' src={LocationIcon} />
             </div>
           </div>
         </div>
 
-        <div className='relative w-[50%] md:w-[30%] bg-[#f1f1f1] rounded-2xl py-2 top-[-1rem] left-[9%] md:left-[20%]'>
-
+        <div className='relative w-[60%] md:w-[30%] bg-[#f1f1f1] rounded-2xl py-2 top-[-1rem] left-[9%] md:left-[20%] md:top-[-3rem]'>
+          <div className='w-[90%] mx-auto flex flex-col gap-4'>
+              <div className='flex gap-3 items-center mt-4'>
+                <div className='w-3 h-3 border border-[#272DC6] rounded-full'></div>
+                <p className='text-sm flex-shrink-0 md:text-lg'>location: Arepo, Ogun state</p>
+              </div>
+              <div className='flex gap-3 items-center'>
+                <div className='w-3 h-3 border border-[#54F8BD] rounded-full'></div>
+                <p className='text-sm flex-shrink-0 md:text-lg'>Phone no +2341234567890</p>
+              </div>
+              <div className='flex gap-3 items-center'>
+                <div className='w-3 h-3 border border-[#272DC6] rounded-full'></div>
+                <p className='text-sm flex-shrink-0 md:text-lg'>whatsapp no: +2341234567890</p>
+              </div>
+              <div className='flex gap-3 items-center'>
+                <div className='w-3 h-3 border border-[#54F8BD] rounded-full'></div>
+                <p className='text-sm flex-shrink-0 md:text-lg'>email: email@email.com</p>
+              </div>
+          </div>
         </div>
        </div>
     </div>

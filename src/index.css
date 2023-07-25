@@ -26,6 +26,10 @@
     background-color: transparent;
     color: white;
 }
+.footer-style{
+    background: #FFF;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.10);
+}
 
 @media (max-width:768px) {
     .parent-image-width{
@@ -48,5 +52,8 @@
     }
     .course-circle{
         right: 8%;
+    }
+    .contact-div{
+        width: 1.25rem;
     }
 }
