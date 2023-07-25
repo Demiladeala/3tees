@@ -19,7 +19,7 @@ const Announcement = () => {
         onSlideChange={() => console.log('Slide Change')}
       >
         <SwiperSlide className='py-10 rounded-lg'>
-          <div className='w-[70%] mx-auto h-[10rem] bg-white/20 rounded-lg space-y-2 py-10 flex flex-col items-center justify-center'>
+          <div className='w-[70%] mx-auto h-[10rem] bg-[rgba(255,255,255,0.5)] rounded-lg space-y-2 py-10 flex flex-col items-center justify-center'>
             <h1 className='font-semibold'>Annoucements 1</h1>
             <p className='text-xs'>Lorem ipsum dolor sit amet consectetur. Imperdiet varius 
               mauris diam malesuada potenti. Amet nulla leo non nam odio 
@@ -27,7 +27,7 @@ const Announcement = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className='py-10 rounded-lg'>
-          <div className='w-[70%] mx-auto h-[10rem] bg-white/20 rounded-lg space-y-2 py-10 flex flex-col items-center justify-center'>
+          <div className='w-[70%] mx-auto h-[10rem] bg-[rgba(255,255,255,0.5)] rounded-lg space-y-2 py-10 flex flex-col items-center justify-center'>
             <h1 className='font-semibold'>Annoucements 2</h1>
             <p className='text-xs'>Lorem ipsum dolor sit amet consectetur. Imperdiet varius 
               mauris diam malesuada potenti. Amet nulla leo non nam odio 
@@ -35,14 +35,14 @@ const Announcement = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className='py-10 rounded-lg'>
-          <div className='w-[70%] mx-auto h-[10rem] bg-white/20 rounded-lg space-y-2 py-10 flex flex-col items-center justify-center'>
+          <div className='w-[70%] mx-auto h-[10rem] bg-[rgba(255,255,255,0.5)] rounded-lg space-y-2 py-10 flex flex-col items-center justify-center'>
             <h1 className='font-semibold'>Annoucements 3</h1>
             <p className='text-xs'>Lorem ipsum dolor sit amet consectetur. Imperdiet varius 
               mauris</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className='py-10 rounded-lg'>
-          <div className='w-[70%] mx-auto h-[10rem] bg-white/20 rounded-lg space-y-2 py-10 flex flex-col items-center justify-center'>
+          <div className='w-[70%] mx-auto h-[10rem] bg-[rgba(255,255,255,0.5)] rounded-lg space-y-2 py-10 flex flex-col items-center justify-center'>
             <h1 className='font-semibold'>Annoucements 4</h1>
             <p className='text-xs'>Lorem ipsum dolor sit amet consectetur. Imperdiet varius 
               mauris diam malesuada potenti. Amet nulla leo non nam odio 

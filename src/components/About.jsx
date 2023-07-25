@@ -19,10 +19,10 @@ const About = () => {
               <img src={headerImage} />
             </div>
             <h2 className='text-center mt-3 text-2xl font-bold'>Heading for About Us Section</h2>
-            <p className='text-sm text-black tracking-wide mt-4'>Lorem ipsum dolor sit amet consectetur. Imperdiet varius 
+            <p className='text-base text-black tracking-wide mt-4'>Lorem ipsum dolor sit amet consectetur. Imperdiet varius 
               mauris diam malesuada potenti. Amet nulla leo non nam odio 
               massa sodales morbi ornare.</p>
-            <p className='text-sm text-black tracking-wide mt-4'>Lorem ipsum dolor sit amet consectetur. Imperdiet varius 
+            <p className='text-base text-black tracking-wide mt-4'>Lorem ipsum dolor sit amet consectetur. Imperdiet varius 
               mauris diam malesuada potenti. Amet nulla leo non nam odio 
               massa sodales morbi ornare</p>
             <div className='w-full flex gap-4 items-center justify-center mt-4'>
@@ -31,7 +31,7 @@ const About = () => {
             </div>
         </div>
 
-        <div className='relative mx-auto mt-[15rem] parent-image-width md:mt-0'>
+        <div className='relative mx-auto mt-[15rem] parent-image-width md:mt-0 hidden md:flex'>
           
           <div className='w-full absolute top-[-7rem] flex justify-end md:hidden'>
             <div className='mr-10'>
