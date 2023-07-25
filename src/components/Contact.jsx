@@ -57,7 +57,7 @@ const Contact = () => {
               </div>
               <div className='flex gap-3 items-center'>
                 <div className='w-3 h-3 border border-[#272DC6] rounded-full'></div>
-                <p className='text-xs  md:text-lg'>whatsapp no: +2341234567890</p>
+                <p className='text-xs ml-2 md:text-lg'>whatsapp no: +2341234567890</p>
               </div>
               <div className='flex gap-3 items-center'>
                 <div className='w-3 h-3 border border-[#54F8BD] rounded-full'></div>
