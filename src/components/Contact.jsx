@@ -49,19 +49,19 @@ const Contact = () => {
           <div className='w-[80%] relative left-2 flex flex-col gap-4'>
               <div className='flex gap-3 items-center mt-4'>
                 <div className='w-3 h-3 border border-[#272DC6] rounded-full'></div>
-                <p className='text-sm flex-shrink-0 md:text-lg'>location: Arepo, Ogun state</p>
+                <p className='text-xs flex-shrink-0 md:text-lg'>location: Arepo, Ogun state</p>
               </div>
               <div className='flex gap-3 items-center'>
                 <div className='w-3 h-3 border border-[#54F8BD] rounded-full'></div>
-                <p className='text-sm flex-shrink-0 md:text-lg'>Phone no +2341234567890</p>
+                <p className='text-xs flex-shrink-0 md:text-lg'>Phone no +2341234567890</p>
               </div>
               <div className='flex gap-3 items-center'>
                 <div className='w-3 h-3 border border-[#272DC6] rounded-full'></div>
-                <p className='text-sm flex-shrink-0 md:text-lg'>whatsapp no: +2341234567890</p>
+                <p className='text-xs flex-shrink-0 md:text-lg'>whatsapp no: +2341234567890</p>
               </div>
               <div className='flex gap-3 items-center'>
                 <div className='w-3 h-3 border border-[#54F8BD] rounded-full'></div>
-                <p className='text-sm flex-shrink-0 md:text-lg'>email: email@email.com</p>
+                <p className='text-xs flex-shrink-0 md:text-lg'>email: email@email.com</p>
               </div>
           </div>
         </div>
