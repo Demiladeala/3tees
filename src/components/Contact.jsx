@@ -72,19 +72,19 @@ const Contact = () => {
         <div className='relative z-10 w-[60%] md:w-[30%] bg-[#f1f1f1] rounded-2xl py-2 top-[-1rem] left-[9%] md:left-[20%] md:top-[-3rem]'>
           <div className='w-[80%] relative left-2 flex flex-col gap-4'>
               <div className='flex gap-3 items-center mt-4'>
-                <div className='w-3 h-3 border border-[#272DC6] rounded-full'></div>
+                <div className='flex-shrink-0 w-3 h-3 border border-[#272DC6] rounded-full'></div>
                 <p className='text-xs  md:text-lg'>location: Arepo, Ogun state</p>
               </div>
               <div className='flex gap-3 items-center'>
-                <div className='w-3 h-3 border border-[#54F8BD] rounded-full'></div>
+                <div className='flex-shrink-0 w-3 h-3 border border-[#54F8BD] rounded-full'></div>
                 <p className='text-xs  md:text-lg'>Phone no +2341234567890</p>
               </div>
               <div className='flex gap-3 items-center'>
-                <div className='w-3 h-3 border border-[#272DC6] rounded-full'></div>
+                <div className='flex-shrink-0 w-3 h-3 border border-[#272DC6] rounded-full'></div>
                 <p className='text-xs ml-2 md:text-lg'>whatsapp no: +2341234567890</p>
               </div>
               <div className='flex gap-3 items-center'>
-                <div className='w-3 h-3 border border-[#54F8BD] rounded-full'></div>
+                <div className='flex-shrink-0 w-3 h-3 border border-[#54F8BD] rounded-full'></div>
                 <p className='text-xs  md:text-lg'>email: email@email.com</p>
               </div>
           </div>
