@@ -1,18 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from "../assets/Menu.png"
 import designImg from "../assets/Group 1.png"
 
-const Hero = () => {
+const Hero = ({ toggleNavbar }) => {
+  const [isNavFixed , setIsNavFixed] = useState(false);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+        setIsNavFixed(scrollPosition > 100);
+      };
+      
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
     <>
     <div className='md:hidden relative hero min-h-[28rem] flex items-center justify-center'>
 
-      <div className='absolute w-[90%] top-7 flex justify-between items-center'>
+
+      <div className='fixed w-[90%] top-7 flex justify-between items-center'>
         <div className='text-white border border-white py-1 px-2 flex justify-center items-center cursor-pointer'>
          <a href="#">Logo</a>
         </div>
 
-        <div className='cursor-pointer'>
+        <div className='cursor-pointer menu-bar' onClick={toggleNavbar}>
           <img src={Logo} alt="logo" />
         </div>
       </div>
