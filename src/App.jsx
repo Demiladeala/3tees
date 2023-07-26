@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Hero from "./components/Hero"
 import Services from "./components/Services"
 import About from "./components/About"
@@ -12,6 +12,24 @@ import {VscClose} from 'react-icons/vsc'
 
 function App() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [backgroundColor, setBackgroundColor] = useState('transparent');
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        setBackgroundColor('rgba(255, 255 , 255, 0.9');
+      } else {
+        setBackgroundColor('transparent');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
@@ -24,7 +42,7 @@ function App() {
       </div>
 
       {isNavbarOpen && 
-        <div className="z-[100] fixed top-0 right-0 text-white w-[80%] bg-black bg-opacity-95 h-screen">
+        <div className="z-[100] md:hidden fixed top-0 right-0 text-white w-[80%] bg-black bg-opacity-95 h-screen">
           <div className="py-8 flex w-[90%] mx-auto items-center justify-end">
             <VscClose size={28} onClick={toggleNavbar} className="cursor-pointer"/>
           </div>
@@ -39,7 +57,7 @@ function App() {
         </div>}
 
       <section id="hero">
-         <Hero toggleNavbar={toggleNavbar} />
+         <Hero toggleNavbar={toggleNavbar} backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />
       </section>
 
       <section id="services">
