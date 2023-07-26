@@ -28,13 +28,13 @@ function App() {
           <div className="py-8 flex w-[90%] mx-auto items-center justify-end">
             <VscClose size={28} onClick={toggleNavbar} className="cursor-pointer"/>
           </div>
-          <div className="space-y-8 pl-7 flex flex-col text-lg">
-            <a href="/#">HOME</a>
-            <a href="/#about">ABOUT</a>
-            <a href="/#courses">COURSES</a>
-            <a href="/#annoucements">ANNOUCEMENTS</a>
-            <a href="/#staff">STAFF</a>
-            <a href="/#contact">CONTACT</a>
+          <div className="space-y-8 pl-8 flex flex-col text-lg">
+            <a onClick={toggleNavbar} href="/#">HOME</a>
+            <a onClick={toggleNavbar} href="/#about">ABOUT</a>
+            <a onClick={toggleNavbar} href="/#courses">COURSES</a>
+            <a onClick={toggleNavbar} href="/#annoucement">ANNOUCEMENTS</a>
+            <a onClick={toggleNavbar} href="/#staff">STAFF</a>
+            <a onClick={toggleNavbar} href="/#contact">CONTACT</a>
           </div>
         </div>}
 
