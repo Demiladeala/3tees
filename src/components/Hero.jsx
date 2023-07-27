@@ -33,7 +33,7 @@ const Hero = ({ toggleNavbar, backgroundColor, borderColor}) => {
     <>
 
       <div className='navbar-header z-[400] py-5 fixed w-full left-0 top-0 flex justify-between items-center md:hidden' style={{ backgroundColor }}>
-        <div className='border ml-8 border-white py-1 px-2 flex justify-center items-center cursor-pointer' style={{ borderColor}}>
+        <div className='text-white border ml-8 border-white py-1 px-2 flex justify-center items-center cursor-pointer' style={{ borderColor}}>
          <a href="#" id="logoLink">Logo</a>
         </div>
 
