@@ -17,20 +17,22 @@ const Courses = () => {
       <h2 className='text-center mt-3 text-2xl font-bold'>Our Courses</h2>
     </div>
 
-    <div className='w-[96%] mx-auto relative grid grid-cols-3 grid-rows-2 gap-1 mt-10'>
-     <div className='text-white bg-[#181822] rounded-lg p-2 space-y-2 flex items-center'>
+    <div className='md:w-[80%] w-[96%] mx-auto relative grid grid-cols-3 grid-rows-2 gap-1 mt-10 md:gap-4 md:mt-16'>
+     <div className='text-white bg-[#181822] rounded-lg p-2 space-y-2 flex items-center md:py-20'>
       <div className=''>
       <h1 className='pt-6 pb-2 font-semibold text-lg'>Course 1</h1>
-      <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
+      <p className='text-xs font-light mb-2 md:hidden'>Lorem ipsum dolor sit amet consectetur.</p>
+      <p className='text-sm font-light mb-2 hidden md:flex'>Lorem ipsum dolor sit amet consectetur. Cursus rutrum orci volutpat faucibus massa risus id magna sit. In euismod dolor ornare habitasse orci nam at.</p>
       <button className='bg-[#E56000] py-1 px-5 rounded-xl mb-8 text-xs'>Button</button>
       </div>
      
      </div>
 
-     <div className='relative row-span-2 bg-[#F9F9F9] rounded-lg p-2 flex items-center z-10'>
+     <div className='relative md:top-32 md:h-[40rem] row-span-2 bg-[#F9F9F9] rounded-lg p-2 flex items-center z-10'>
       <div className=''>
       <h1 className='font-semibold text-lg'>Course 1</h1>
-      <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
+      <p className='text-xs font-light mb-2 md:hidden'>Lorem ipsum dolor sit amet consectetur.</p>
+      <p className='text-sm font-light mb-2 hidden md:flex'>Lorem ipsum dolor sit amet consectetur. Cursus rutrum orci volutpat faucibus massa risus id magna sit. In euismod dolor ornare habitasse orci nam at.</p>
       <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white text-xs'>Button</button>
       </div>
      </div>
@@ -39,21 +41,24 @@ const Courses = () => {
         <img src={rec2} className='z-0' />
       </div>
 
-     <div className='relative bg-[#F89650] rounded-lg p-2 z-10'>
-      <h1 className='pt-6 font-semibold text-lg'>Course 1</h1>
-      <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
+     <div className='relative bg-[#F89650] rounded-lg p-2 z-10 md:items-center'>
+      <h1 className='pt-6 font-semibold text-lg md:mt-16'>Course 1</h1>
+      <p className='text-xs font-light mb-2 md:hidden'>Lorem ipsum dolor sit amet consectetur.</p>
+      <p className='text-sm font-light mb-2 hidden md:flex'>Lorem ipsum dolor sit amet consectetur. Cursus rutrum orci volutpat faucibus massa risus id magna sit. In euismod dolor ornare habitasse orci nam at.</p>
       <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white text-xs'>Button</button>
      </div>
 
      <div className='bg-[#F89650] rounded-lg p-2'>
-      <h1 className='pt-6 font-semibold text-lg'>Course 1</h1>
-      <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
+      <h1 className='pt-6 font-semibold text-lg md:mt-16'>Course 1</h1>
+      <p className='text-xs font-light mb-2 md:hidden'>Lorem ipsum dolor sit amet consectetur.</p>
+      <p className='text-sm font-light mb-2 hidden md:flex'>Lorem ipsum dolor sit amet consectetur. Cursus rutrum orci volutpat faucibus massa risus id magna sit. In euismod dolor ornare habitasse orci nam at.</p>
       <button className='bg-[#1E1E1E] py-1 px-5 rounded-xl text-white text-xs'>Button</button>
      </div>
 
      <div className='relative text-white bg-[#181822] rounded-lg p-2 z-10'>
-      <h1 className='pt-6 font-semibold text-lg'>Course 1</h1>
-      <p className='text-xs font-light mb-2'>Lorem ipsum dolor sit amet consectetur.</p>
+      <h1 className='pt-6 font-semibold text-lg md:mt-16'>Course 1</h1>
+      <p className='text-xs font-light mb-2 md:hidden'>Lorem ipsum dolor sit amet consectetur.</p>
+      <p className='text-sm font-light mb-2 hidden md:flex'>Lorem ipsum dolor sit amet consectetur. Cursus rutrum orci volutpat faucibus massa risus id magna sit. In euismod dolor ornare habitasse orci nam at.</p>
       <button className='bg-[#E56000] py-1 px-5 rounded-xl text-xs'>Button</button>
      </div>
 

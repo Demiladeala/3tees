@@ -12,9 +12,9 @@ import cir2 from "../assets/about-circle-2.png"
 const About = () => {
   return (
     <>
-    <div className='w-[90%] mx-auto mt-28 flex flex-col gap-5 md:items-center md:justify-center md:flex-row'>
+    <div className='w-[90%] mx-auto mt-28 flex flex-col gap-28 md:items-center md:justify-center md:flex-row md:mt-40'>
 
-        <div className='w-full space-y-6 md:basis-[40%]'>
+        <div className='w-full space-y-6 md:basis-[40%] md:ml-20'>
             <div className='w-full flex items-center justify-center'>
               <img src={headerImage} />
             </div>
@@ -31,7 +31,7 @@ const About = () => {
             </div>
         </div>
 
-        <div className='relative mx-auto mt-[15rem] parent-image-width md:mt-0 hidden md:flex'>
+        <div className='relative border mt-[15rem] parent-image-width md:mt-0 hidden md:flex md:mr-40'>
           
           <div className='w-full absolute top-[-7rem] flex justify-end md:hidden'>
             <div className='mr-10'>

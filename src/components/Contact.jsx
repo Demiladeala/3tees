@@ -44,7 +44,7 @@ const Contact = () => {
             <div>
               <img src={header}/>
             </div>
-            <h1 className='text-lg md:text-2xl'>Find us Through <br className='md:hidden' /> These!</h1>
+            <h1 className='text-lg md:text-2xl font-medium'>Find us Through <br className='md:hidden' /> These!</h1>
           </div>
           <div className='basis-[40%] flex gap-1 md:justify-center mr-4'>
             <div className=" h-full w-10 contact-div">

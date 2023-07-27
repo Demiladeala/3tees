@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import Logo from "../assets/Menu.png"
 import designImg from "../assets/Group 1.png"
+import desktopLandingPage from "../assets/landing-page-bg.png"
+import desktopHeroImage from '../assets/desktop-hero-image.png'
 
 const Hero = ({ toggleNavbar, backgroundColor, borderColor}) => {
   
@@ -59,13 +61,42 @@ const Hero = ({ toggleNavbar, backgroundColor, borderColor}) => {
 
 
 
+            {/* DESKTOP HERO MODE */}
+    <div className='hidden md:flex relative'>
 
-    <div className='border border-black hidden md:flex'>
-     <nav className='w-[90%] mx-auto'>
-        <div className='text-white border border-white w-12 flex justify-center items-center'>
-         <a href="#">Logo</a>
+     <nav className='fixed z-[200] top-0 left-0  w-full flex justify-between items-center' style={{ backgroundColor }}>
+        <div className='text-white border border-black flex justify-center items-center ml-20 my-4'>
+         <a href="#" className="text-black py-4 px-5 uppercase">Logo</a>
+        </div>
+
+        <div className="z-[50] border-black mr-20">
+          <a className="mr-7 text-[17px]" onClick={toggleNavbar} href="/#">HOME</a>
+          <a className="mr-7 text-[17px]" onClick={toggleNavbar} href="/#about">ABOUT</a>
+          <a className="mr-7 text-[17px]" onClick={toggleNavbar} href="/#courses">COURSES</a>
+          <a className="mr-7 text-[17px]" onClick={toggleNavbar} href="/#annoucement">ANNOUCEMENTS</a>
+          <a className="mr-7 text-[17px]" onClick={toggleNavbar} href="/#staff">STAFF</a>
+          <a className="mr-7 text-[17px]" onClick={toggleNavbar} href="/#contact">CONTACT</a>
         </div>
       </nav>
+
+      <div className="w-[50%] absolute right-0 object-cover">
+        <img className="relative top-[-4.2rem]" src={desktopLandingPage} />
+      </div>
+
+        
+
+      <div className="relative w-full py-20 flex gap-8 items-center">
+        <div className="w-[40%] ml-24 space-y-10">
+          <h1 className=" text-4xl font-medium">
+          Welcome to 3tees educational Center Test Site!
+          </h1>
+          <p>Lorem ipsum dolor sit amet consectetur. Duis a accumsan sed donec lobortis a nisi.</p>
+          <button className="bg-[#ff6f08] px-7 py-2 rounded-2xl hover:bg-opacity-80">Button</button>
+        </div>
+        <div className="w-[55%] h-[50%] relative top-[-10rem] mr-20 object-cover">
+          <img src={desktopHeroImage} />
+        </div>
+      </div>
     </div>
 
     </>
