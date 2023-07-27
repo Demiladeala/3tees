@@ -13,15 +13,17 @@ import {VscClose} from 'react-icons/vsc'
 function App() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [backgroundColor, setBackgroundColor] = useState('transparent');
-
+  const [borderColor, setBorderColor] = useState('white');
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition > 100) {
         setBackgroundColor('rgba(255, 255 , 255, 0.9');
+        setBorderColor('black');
       } else {
         setBackgroundColor('transparent');
+        setBorderColor('white');
       }
     };
     window.addEventListener('scroll', handleScroll);
@@ -42,11 +44,11 @@ function App() {
       </div>
 
       {isNavbarOpen && 
-        <div className="z-[100] md:hidden fixed top-0 right-0 text-white w-[80%] bg-black bg-opacity-95 h-screen">
+        <div className="z-[500] md:hidden fixed top-0 right-0 text-white w-full bg-black bg-opacity-95 h-screen">
           <div className="py-8 flex w-[90%] mx-auto items-center justify-end">
-            <VscClose size={28} onClick={toggleNavbar} className="cursor-pointer"/>
+            <VscClose size={30} onClick={toggleNavbar} className="cursor-pointer"/>
           </div>
-          <div className="space-y-8 pl-8 flex flex-col text-lg">
+          <div className="space-y-8 flex flex-col justify-center items-center text-lg">
             <a onClick={toggleNavbar} href="/#">HOME</a>
             <a onClick={toggleNavbar} href="/#about">ABOUT</a>
             <a onClick={toggleNavbar} href="/#courses">COURSES</a>
@@ -57,7 +59,7 @@ function App() {
         </div>}
 
       <section id="hero">
-         <Hero toggleNavbar={toggleNavbar} backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />
+         <Hero toggleNavbar={toggleNavbar} backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} borderColor={borderColor} setBorderColor={setBorderColor}  />
       </section>
 
       <section id="services">

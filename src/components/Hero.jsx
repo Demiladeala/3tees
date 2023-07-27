@@ -1,18 +1,43 @@
-import React from 'react'
+import { useState, useEffect } from "react"
 import Logo from "../assets/Menu.png"
 import designImg from "../assets/Group 1.png"
 
-const Hero = ({ toggleNavbar, backgroundColor }) => {
+const Hero = ({ toggleNavbar, backgroundColor, borderColor}) => {
   
+  const handleScroll = () => {
+    const logoLink = document.getElementById('logoLink');
+    if (logoLink) {
+      const scrollPosition = window.scrollY;
+      const heroSection = document.querySelector('.hero');
+
+      // Adjust the scrollOffset value as needed
+      const scrollOffset = 100;
+
+      if (scrollPosition > heroSection.offsetTop + scrollOffset) {
+        logoLink.style.color = 'black';
+      } else {
+        logoLink.style.color = 'white';
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      // Clean up the scroll event listener when the component unmounts
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
 
-      <div className='navbar-header z-[900] fixed w-[90%] left-[5%] top- flex justify-between items-center md:hidden' style={{ backgroundColor }}>
-        <div className={`text-white border mt-8 border-white py-1 px-2 flex justify-center items-center cursor-pointer`}>
-         <a href="#">Logo</a>
+      <div className='navbar-header z-[400] py-5 fixed w-full left-0 top-0 flex justify-between items-center md:hidden' style={{ backgroundColor }}>
+        <div className='border ml-8 border-white py-1 px-2 flex justify-center items-center cursor-pointer' style={{ borderColor}}>
+         <a href="#" id="logoLink">Logo</a>
         </div>
 
-        <div className='cursor-pointer menu-bar mt-8' onClick={toggleNavbar}>
+        <div className='relative cursor-pointer menu-bar mr-8' onClick={toggleNavbar}>
           <img src={Logo} alt="logo" />
         </div>
       </div>
