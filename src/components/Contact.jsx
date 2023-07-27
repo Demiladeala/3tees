@@ -13,6 +13,8 @@ import arrow1 from "../assets/contact-mobile-arrow-1.png"
 import arrow2 from "../assets/contact-mobile-arrow-2.png"
 import circle1 from "../assets/contact-mobile-circle-1.png"
 import circle2 from "../assets/contact-mobile-circle-2.png"
+import desktopCircle1 from "../assets/contact-desktop-circle-1.png"
+import desktopCircle2 from "../assets/contact-desktop-circle-2.png"
 
 const Contact = () => {
   return (
@@ -39,12 +41,13 @@ const Contact = () => {
         </div>
       </div>
 
-        <div className='z-10 w-[90%] md:w-[70%] mx-auto bg-[#08043C] rounded-2xl py-8 md:py-16 flex justify-between'>
-          <div className=' border-white basis-[60%] ml-4 space-y-3 text-white'>
-            <div>
+        <div className='relative z-10 w-[90%] md:w-[70%] mx-auto bg-[#08043C] rounded-2xl py-8 md:py-16 flex justify-between'>
+
+          <div className='basis-[60%] ml-4 space-y-3 text-white'>
+            <div className='md:ml-20'>
               <img src={header}/>
             </div>
-            <h1 className='text-lg md:text-2xl font-medium'>Find us Through <br className='md:hidden' /> These!</h1>
+            <h1 className='text-lg md:text-2xl font-medium md:ml-20'>Find us Through <br className='md:hidden' /> These!</h1>
           </div>
           <div className='basis-[40%] flex gap-1 md:justify-center mr-4'>
             <div className=" h-full w-10 contact-div">
@@ -69,8 +72,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className='relative z-10 w-[60%] md:w-[30%] bg-[#f1f1f1] rounded-2xl py-2 top-[-1rem] left-[9%] md:left-[20%] md:top-[-3rem]'>
-          <div className='w-[80%] relative left-2 flex flex-col gap-4'>
+        <div className='relative z-10 w-[60%] md:w-[40%] bg-[#f1f1f1] rounded-2xl py-2 md:py-3 top-[-1rem] left-[9%] md:left-[20%] md:top-[-3rem]'>
+          <div className='w-[80%] relative left-2 flex flex-col gap-4 md:ml-10'>
               <div className='flex gap-3 items-center mt-4'>
                 <div className='flex-shrink-0 w-3 h-3 border border-[#272DC6] rounded-full'></div>
                 <p className='text-xs  md:text-lg'>location: Arepo, Ogun state</p>
@@ -83,7 +86,7 @@ const Contact = () => {
                 <div className='flex-shrink-0 w-3 h-3 border border-[#272DC6] rounded-full'></div>
                 <p className='text-xs ml-2 md:text-lg'>whatsapp no: +2341234567890</p>
               </div>
-              <div className='flex gap-3 items-center'>
+              <div className='flex gap-3 items-center mb-4'>
                 <div className='flex-shrink-0 w-3 h-3 border border-[#54F8BD] rounded-full'></div>
                 <p className='text-xs  md:text-lg'>email: email@email.com</p>
               </div>
